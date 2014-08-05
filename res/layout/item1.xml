@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+android:id="@+id/RelativeLayout"  
+android:layout_width="fill_parent"  
+android:layout_height="wrap_content"  
+android:paddingBottom="4dip"  
+android:paddingRight="12dip" 
+android:background="#000000">
+
+<TextView
+    android:id="@+id/latitude"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/name"
+    android:layout_marginRight="36dip"
+    android:maxLines="2"
+    android:paddingLeft="10dp"
+    android:paddingRight="2dp"
+    android:text="latitude"
+    android:textColor="#FFFFFF" />
+
+<TextView
+    android:id="@+id/longitude"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/latitude"
+    android:layout_marginRight="36dip"
+    android:maxLines="2"
+    android:paddingLeft="10dp"
+    android:paddingRight="2dip"
+    android:text="longitude"
+    android:textColor="#FFFFFF" />
+
+<CheckBox android:id="@+id/selected"  
+android:layout_width="wrap_content"  
+android:layout_height="wrap_content"  
+android:layout_marginLeft="36dip"  
+android:layout_centerVertical="true"  
+android:layout_alignParentRight="true"  
+android:focusable="false"  />
+
+<TextView
+    android:id="@+id/name"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:paddingLeft="5dp"
+    android:paddingRight="2dip"
+    android:paddingTop="6dip"
+    android:text="name"
+    android:textColor="#FFFFFF"
+    android:textSize="18dip" />
+
+<TextView
+    android:id="@+id/id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/longitude"
+    android:layout_alignBottom="@+id/longitude"
+    android:layout_alignLeft="@+id/selected"
+    android:padding="5dp"
+    android:text="_id"
+    android:textColor="#FFFFFF"
+    android:visibility="invisible" />
+  
+</RelativeLayout>  
